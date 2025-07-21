@@ -12,19 +12,15 @@
 //      https://www.syswonder.org
 //
 // Authors:
-//
-pub mod cpu;
-pub mod csr;
-pub mod entry;
-pub mod iommu;
-pub mod ipi;
-pub mod mm;
-pub mod paging;
-pub mod s1pt;
-pub mod s2pt;
-pub mod sbi;
-pub mod trap;
-pub mod zone;
+//      ForeverYolo <2572131118@qq.com>
 
-pub use s1pt::Stage1PageTable;
-pub use s2pt::Stage2PageTable;
+pub fn iommu_init() {
+    info!("riscv: iommu_init: do nothing now");
+}
+
+pub fn iommu_add_device(vmid: usize, sid: usize) {
+    info!(
+        "riscv: iommu_add_device: do nothing now, vmid: {}, sid: {}",
+        vmid, sid
+    );
+}
