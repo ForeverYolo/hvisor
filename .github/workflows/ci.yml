@@ -6,11 +6,11 @@ on:
   push:
     branches:
       - main
-      - dev
+      - clk/dev
   pull_request:
     branches:
       - main
-      - dev
+      - clk/dev
   workflow_dispatch:
 env:
   MODE: debug
